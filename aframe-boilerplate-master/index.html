@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, World! - A-Frame</title>
-    <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-  </head>
-  <body>
-   <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam;'>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.8/aframe/build/aframe-ar.jss"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <a-marker preset="custom" type="pattern" url="pattern-marker.patt">
+     
+    <a-image id="test" src="https://cors-anywhere.herokuapp.com/https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Faxai_2007-10-27_0135Z.jpg/800px-Faxai_2007-10-27_0135Z.jpg" position="0 0 0" rotation="-90 0 0" width="" height="" opacity="1" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
          
          <a-marker preset="custom" type="pattern" url="pattern-Check.patt" smooth="true" smoothCount="20" smoothTolerance="0.01" smoothThreshold="20">
             <a-image id="test" src="IMG_3302.jpeg" position="0 0 0" rotation="-90 0 0" width="4" height="5" opacity="1" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
